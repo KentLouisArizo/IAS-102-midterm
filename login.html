@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>User Login</h2>
+        <form id="loginForm">
+            <label for="username">Username or Email:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <a href="resetPassword.html">Forgot Password?</a>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', loginUser);
+    </script>
+</body>
+</html>
